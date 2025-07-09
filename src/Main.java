@@ -22,7 +22,11 @@ public class Main {
             	int pin =sc.nextInt();
             	System.out.println("Enter opening Balance: ");
             	double opening = sc.nextDouble();
-            	bank.openAccount(name, pin, opening);
+            	try {
+            	    bank.openAccount(name, pin, opening);
+            	} catch (IllegalArgumentException e) {
+            	    System.out.println(e.getMessage());
+            	}
             	break;
             	
             case 2:

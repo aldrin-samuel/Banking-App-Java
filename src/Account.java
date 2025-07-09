@@ -9,7 +9,7 @@ public class Account {
 	
 public Account(String name,int accno,int pin,double intialBalance) {
 	if(intialBalance < minOpeningBalance) {
-		throw new IllegalArgumentException("Opening balance must be ₹500 or more.");
+		throw new IllegalArgumentException("Opening balance must be $500 or more.");
 	}
 	this.accHolderName=name;
 	this.accNo=accno;
