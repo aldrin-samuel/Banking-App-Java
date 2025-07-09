@@ -26,7 +26,7 @@ public class Main {
             	    bank.openAccount(name, pin, opening);
             	} catch (IllegalArgumentException e) {
             	    System.out.println(e.getMessage());
-            	}
+            	}//try
             	break;
             	
             case 2:
